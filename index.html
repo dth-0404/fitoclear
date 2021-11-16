@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="vi">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/animate.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/reponsive.css">
+      <title>Trang chủ</title>
+   </head>
+   <body>
+      <a id="button_scroll_top"><i class="fas fa-arrow-up"></i></a>
+      <a id="calltrap-btn" class="b-calltrap-btn calltrap_offline hidden-phone visible-tablet pulse-2"
+         href="tel:02873070789">
+         <div id="calltrap-ico"></div>
+      </a>
+      <div class="modal fade" style="padding-right: 0!important;" id="modalLoginForm" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content form-discount">
+               <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12 col-12 box-modal-img pr-0">
+                     <img src="img/sale-off-promotion.png" class="img-modal" alt="khuyen-mai-fito-clear"
+                        title="Khuyến mãi Fito Clear">
+                  </div>
+                  <div
+                     class="col-lg-6 col-md-12 col-sm-12 col-12 box-modal-form d-flex align-items-center pl-0 tablet-style">
+                     <form action="" method="post">
+                        <div class="modal-header">
+                           <h4 class="modal-title w-100">Đăng ký nhận giá ưu đãi</h4>
+                           <button type="button" class="close mr-0" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+                           </button>
+                        </div>
+                        <div class="modal-body mx-3 pt-4 pb-4">
+                           <div class="md-form mb-3 text-left">
+                              <label>Họ tên</label>
+                              <input type="text" name="name" class="form-control validate" autocomplete="off"
+                                 required>
+                           </div>
+                           <div class="md-form mb-3 text-left">
+                              <label>Số điện thoại</label>
+                              <input type="text" name="phone" class="form-control validate only_number"
+                                 autocomplete="off" required maxlength="10" onkeypress="validate(event)">
+                              <center>
+                                 <button class="btn btn-default mt-4 js_submit" type="submit">Đăng ký
+                                 ngay</button>
+                              </center>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12">
+                  <div class="navbar d-flex align-items-center justify-content-between">
+                     <div class="logo">
+                        <a href="index.html">
+                        <img src="img/logo.png" alt="Fito Clear" title="Fito Clear">
+                        </a>
+                        <button class="navbar-bar"><i class="fas fa-bars"></i></button>
+                     </div>
+                     <nav class="navbar-content">
+                        <div class="navbar-close"><i class="fas fa-times"></i></div>
+                        <ul>
+                           <li><a href="index.html">TRANG CHỦ</a></li>
+                           <li><a href="about.html">GIỚI THIỆU</a></li>
+                           <li><a href="blog.html">SỔ TAY SỨC KHỎE</a></li>
+                           <li><a href="contact.html">LIÊN HỆ</a></li>
+                           <li id="btn-order"><a href="#" data-toggle="modal" data-target="#modalLoginForm">ĐẶT
+                              HÀNG NGAY</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <div class="navbar-button">
+                        <a href="#" class="btn btn-order" data-toggle="modal" data-target="#modalLoginForm">ĐẶT
+                        HÀNG NGAY</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="banner">
+         <div class="home-content">
+            <h2>NẤM MÓNG TAY MÓNG CHÂN</h2>
+            <h5>KHIẾN BẠN MẤT TỰ TIN TRONG CUỘC SỐNG</h5>
+            <div class="method">
+               <h6>LO LẮNG TÌM CÁCH CHỮA TRỊ</h6>
+            </div>
+         </div>
+      </section>
+      <section class="signal">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="frames">
+                  <h3><img src="img/symbol.png"> Bạn Đang Có Dấu Hiệu Của Bệnh Nấm Móng Tay Chân</h3>
+               </div>
+               <div class="col-md-6 col-12 right-video choose-1 wow fadeInLeftBig" data-wow-duration="2.5s">
+                  <div class="media frame-nail option-1">
+                     <img src="img/sick-nail-1.png" class="align-self-center mr-3">
+                     <div class="media-body text-nail">
+                        <p>Sự thay đổi cơ bản dễ phát hiện ở móng như thay đổi thành màu trắng, nâu hoặc
+                           vàng, có triệu chứng lan rộng, khiến cho móng dày lên hoặc bị nứt.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-12 left-video choose-2 wow fadeInRightBig" data-wow-duration="2.5s">
+                  <div class="media frame-nail option-2">
+                     <img src="img/sick-nail-2.png" class="align-self-center mr-3">
+                     <div class="media-body text-nail">
+                        <p>Một dấu hiệu nặng hơn là nấm móng có thể tàn phá gây ra gãy móng, mất móng, và nguy hiểm
+                           hơn là dẫn tới nhiễm trùng lan ra khắp tay chân.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-12 right-video choose-3 wow fadeInLeftBig" data-wow-duration="2.5s">
+                  <div class="media frame-nail option-3">
+                     <img src="img/sick-nail-3.png" class="align-self-center mr-3">
+                     <div class="media-body text-nail">
+                        <p>Bề mặt của móng bị sần sùi, có lớp vảy trên móng xuất hiện các lằn dọc lằn ngang và không
+                           còn có sáng bóng như móng bình thường.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-12 left-video choose-4 wow fadeInRightBig" data-wow-duration="2.5s">
+                  <div class="media frame-nail option-4">
+                     <img src="img/sick-nail-4.png" class="align-self-center mr-3">
+                     <div class="media-body text-nail">
+                        <p>Nếu phát hiện chậm thì bệnh nấm sẽ ăn sâu vào móng và ăn mòn sâu vào thịt gây mùi hôi
+                           cũng như bắt đầu mưng mủ, ảnh hưởng thẩm mỹ.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="help-you">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="text-help">
+                  <img src="img/symbol.png"> FITO CLEAR Sẽ Giúp Bạn Như Thế Nào
+               </div>
+               <div class="col-md-6 col-12 right-video">
+                  <div class="media bg-help-1 wow fadeInLeftBig" data-wow-duration="2.5s">
+                     <div class="media-body">
+                        <p>Fito Clear hỗ trợ điều trị các trường hợp móng tay chân lở loét, hư móng, rụng móng vì bị
+                           vi khuẩn xâm nhập và ngăn ngừa mùi khó chịu hiệu quả
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-12 left-video">
+                  <div class="mediaa bg-help-2 wow fadeInRightBig" data-wow-duration="2.5s">
+                     <div class="media-body">
+                        <p>Fito Clear là sản phẩm chuyên trị dứt điểm nấm móng, không tác dụng phụ, không tái phát
+                           khi ngưng sử dụng
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="ingredient">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="frames">
+                  <h3><img src="img/symbol.png"> Thành Phần Của FITO CLEAR Gồm Những Gì?</h3>
+               </div>
+            </div>
+            <div class="top-1">
+               <div class="row justify-content-center">
+                  <figure id="bonus-1">
+                     <img src="img/bonus.png">
+                  </figure>
+                  <div class="col-xl-2 d-lg-none d-xl-block"></div>
+                  <div class="col-xl-2 col-lg-4 col-12 mt-3">
+                     <div class="ingredient-1 wow bounce" data-wow-duration="1.5s" data-wow-iteration="1">
+                        <img src="img/chiet-xuat-toi.png" alt="Chiết xuất Tỏi">
+                        <div class="name-ingredient">Chiết xuất Tỏi</div>
+                        <div class="description-ingredient">Với chức năng kháng khuẩn, làm lành vết thương hiệu quả,
+                           tỏi
+                           còn có khả năng hỗ trợ móng mọc khỏe và không rụng bởi tác nhân nào.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-12 mt-3">
+                     <div class="ingredient-1 wow bounce" data-wow-duration="2s" data-wow-iteration="1">
+                        <img src="img/tinh-dau-gung.png" alt="Tinh dầu gừng">
+                        <div class="name-ingredient">Tinh dầu gừng</div>
+                        <div class="description-ingredient">Với mùi hương dễ chịu, có tác dụng giảm đau chống viêm,
+                           chống nhiễm trùng, hỗ trợ sát trùng vết thương khi bị nấm xâm nhập
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-12 mt-3">
+                     <div class="ingredient-1 wow bounce" data-wow-duration="1.5s" data-wow-iteration="1">
+                        <img src="img/trau.png" alt="Trầu không">
+                        <div class="name-ingredient">Trầu không</div>
+                        <div class="description-ingredient">Có khả năng giảm ngứa hiệu quả, làm sạch da, diệt khuẩn
+                           cho vết thương ở móng. Ngoài ra còn ngăn mùi hôi khó chịu từ căn bệnh.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-12 mt-3">
+                     <div class="ingredient-1 wow bounce" data-wow-duration="2s" data-wow-iteration="1">
+                        <img src="img/dinh-huong.png" alt="Đinh hương">
+                        <div class="name-ingredient">Đinh hương</div>
+                        <div class="description-ingredient">Là thành phần có công dụng diệt nấm hiệu quả, kháng
+                           viêm, kháng khuẩn và ngăn ngừa sự xâm nhập của các loại vi rút có hại vào móng.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 d-lg-none d-xl-block"></div>
+                  <div class="col-xl-2 col-lg-4 col-12 mt-3">
+                     <div class="ingredient-1 wow bounce" data-wow-duration="1.5s" data-wow-iteration="1">
+                        <img src="img/chiet-xuat-tra-xanh.png" alt="Chiết xuất trà xanh">
+                        <div class="name-ingredient">Chiết xuất trà xanh</div>
+                        <div class="description-ingredient">Trà xanh có chức năng làm mát, làm dịu vùng da, chống
+                           viêm hiệu quả. Ngoài ra, còn hỗ trợ sản phẩm có mùi thơm dễ chịu, không dị ứng.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-12 mt-3">
+                     <div class="ingredient-1 wow bounce" data-wow-duration="2s" data-wow-iteration="1">
+                        <img src="img/tinh-dau-tram-tra.png" alt="Tinh dầu tràm trà">
+                        <div class="name-ingredient">Tinh dầu tràm trà</div>
+                        <div class="description-ingredient">Làm dịu làn da bị tổn thương do nấm móng, kháng viêm,
+                           kháng khuẩn, ngăn ngừa nhiễm trùng do nấm xâm nhập, cải thiện mùi hôi hiệu quả.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-12 mt-3">
+                     <div class="ingredient-1 wow bounce" data-wow-duration="1.5s" data-wow-iteration="1">
+                        <img src="img/tinh-dau-xa.png" alt="Tinh dầu sả">
+                        <div class="name-ingredient">Tinh dầu sả</div>
+                        <div class="description-ingredient">Là thành phần có công dụng diệt nấm hiệu quả, kháng
+                           viêm, kháng khuẩn và ngăn ngừa sự xâm nhập của các loại vi rút có hại vào móng.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-12 mt-3">
+                     <div class="ingredient-1 wow bounce" data-wow-duration="2s" data-wow-iteration="1">
+                        <img src="img/cuc-la-ma.png" alt="Cúc la mã">
+                        <div class="name-ingredient">Cúc la mã</div>
+                        <div class="description-ingredient">Giảm kích ứng, chóng lành vết thương do ảnh hưởng từ
+                           bệnh nấm móng, dược liệu lành tính, không có tác dụng phụ gây hại cho người dùng.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-12 mt-3">
+                     <div class="ingredient-1 wow bounce" data-wow-duration="1.5s" data-wow-iteration="1">
+                        <img src="img/tinh-dau-que.png" alt="Tinh dầu Quế">
+                        <div class="name-ingredient">Tinh dầu Quế</div>
+                        <div class="description-ingredient">Có chức năng diệt vi khuẩn, vi rút, chống lại tình trạng
+                           nấm móng nhờ chứa hợp chất Eugenol có tác dụng tiêu diệt nấm.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="expert">
+         <div class="container-fluid">
+            <div class="row wow fadeInRightBig" data-wow-duration="3s" data-wow-iteration="1">
+               <figure id="bonus-2">
+                  <img src="img/bonus.png">
+               </figure>
+               <div class="title-expert">
+                  <img src="img/symbol.png"> Đánh Giá Từ Chuyên Gia
+               </div>
+               <figure id="bonus-2">
+                  <img src="img/bonus.png">
+               </figure>
+               <div class="col-md-3 col-12">
+                  <div class="doc-tor">
+                     <img src="img/doctor.png" alt="Chuyên gia">
+                  </div>
+               </div>
+               <div class="col-md-9 col-12 left-video">
+                  <div class="frame-expert">
+                     <div class="descripton-expert">
+                        Việc điều trị bệnh nấm móng kịp thời và đúng cách là điều rất quan
+                        trọng. Là một bác sĩ chuyên khoa Da liễu tiếp xúc với nhiều trường hợp nan giải, tôi thường
+                        khuyến khích các bệnh nhân của mình sử dụng các sản phẩm trị nấm có nguồn gốc từ thiên
+                        nhiên, cụ
+                        thể đó là <b>Fito Clear</b>.
+                        <br><br>
+                        Đây là sản phẩm đã được nghiên cứu và kiểm nghiệm lâm sàng do đó đảm bảo thành phần và công
+                        dụng
+                        là hoàn toàn an toàn, không có tác dụng phụ. Dưỡng chất từ <b>Fito Clear</b> thẩm thấu vào
+                        các lớp
+                        tế
+                        bào, tiêu diệt các mầm mống gây bệnh, ngăn ngừa chúng tái phát, đồng thời phục hồi các tế
+                        bào da
+                        bị tổn thương, tái tạo tế bào mới giúp làn da cũng như móng tay, móng chân khỏe mạnh từ
+                        trong ra
+                        ngoài.
+                        <br><br>
+                        Không những thế tình trạng ra mồ hôi chân, hôi chân cũng được chữa dứt điểm.Tôi cho rằng
+                        <b>Fito Clear</b> chính là sản phẩm trị nấm móng tay chân hiệu quả nhất trên thị trường. Nếu
+                        bạn đang
+                        ngày
+                        đêm sống chung cùng căn bệnh nấm móng tay thì hãy sử dụng <b>Fito Clear</b> ngay nhé!
+                     </div>
+                     <div class="name-expert">Đặng Quốc Khánh, bác sĩ chuyên khoa Da liễu</div>
+                  </div>
+               </div>
+            </div>
+            <div class="title-review">
+               <img src="img/symbol.png"> Review FITO CLEAR Từ Khách Hàng
+            </div>
+            <div class="row frame-video justify-content-center wow fadeInLeftBig" data-wow-duration="3s"
+               data-wow-iteration="1">
+               <div class="col-md-7 col-12 left-video right-video">
+                  <div class="video-review">
+                     <iframe src="http://www.youtube.com/embed/AYUZx99A_EM" width="100%" height="500px"
+                        frameborder="0" allowfullscreen>
+                     </iframe>
+                  </div>
+               </div>
+               <div class="col-md-5 col-12 left-video right-video">
+                  <div class="text-video">
+                     <div class="title-video">Chia sẻ về FITO CLEAR của</div>
+                     <div class="detail-text">
+                        Chị Phạm Thị Ngọc Diệp<br>Tôi đã từng bị
+                        nấm móng tay vì tiếp xúc với hóa chất và thuốc độc hại. Ám ảnh cảm giác móng bị
+                        lở loét, đau nhức cả ngày khiến tôi vô cùng căng thẳng. Tôi đã dùng qua nhiều phương pháp
+                        chỉ
+                        đến khi sử dụng <b>Fito Clear</b> thì căn bệnh này mới được trị dứt điểm. Sản phẩm có thành
+                        phần
+                        lành
+                        tính, hương thơm dễ chịu và công dụng hiệu quả.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="customer wow fadeInDownBig" data-wow-duration="3s" data-wow-iteration="1">
+         <div class="contain-fluid">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+               <figure id="bonus-3">
+                  <img src="img/bonus.png">
+               </figure>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="media frame-customer">
+                        <img src="img/customer-1.png" class="align-self-center mr-3">
+                        <div class="media-body text-customer">
+                           <p>Hôm nay, tôi muốn chia sẻ câu chuyện điều trị nấm móng của mình cho các bạn. Tôi tên
+                              Phong, đang làm công nhân và tôi đã từng bị căn bệnh nấm móng trong 5 năm. Khoảng
+                              thời gian này, tôi bị bệnh hành hạ gây đau nhức, ảnh hưởng không nhỏ đến cuộc sống.
+                              Tôi đã dùng qua thuốc Tây và Đông nhưng tất cả đều chịu thua. Chỉ đến khi được người
+                              anh đồng nghiệp giới thiệu cho sản phẩm xịt nấm móng <b>Fito Clear</b>. Với thành
+                              phần từ tự nhiên, dùng rất tiện lợi và tôi đã bắt đầu lành bệnh chỉ trong 1 tháng.
+                              Cho nên tôi khuyên các bạn nên mua sản phẩm này kịp thời để không bỏ lỡ chương trình
+                              khuyến mãi 50% nhé!
+                           </p>
+                           <div class="name-customer">Anh Phong - chia sẻ về Fito Clear</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="media frame-customer">
+                        <img src="img/customer-2.png" class="align-self-center mr-3">
+                        <div class="media-body text-customer">
+                           <p>Thực sự phải cảm ơn <b>Fito Clear</b> nhiều lắm. Bệnh nấm móng tay đã hành hạ tôi
+                              suốt 5 năm trời. Nhiều đêm đau nhức, khó chịu không tài nào ngủ được. Con gái tôi
+                              mua chai xịt này về cho tôi, và đã có nói với tôi rằng đây là sản phẩm chiết xuất từ
+                              thiên nhiên, không tác dụng phụ. Dùng được mấy ngày là dịu hẳn, bớt sưng ngứa, dùng
+                              hết liệu trình là khỏi hẳn. Tôi vui lắm, nên giới thiệu cho nhiều người, ai dùng
+                              cũng khen hiệu quả hết.
+                           </p>
+                           <div class="name-customer">Chị Liên - chia sẻ về Fito Clear</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="media frame-customer">
+                        <img src="img/customer-3.png" class="align-self-center mr-3">
+                        <div class="media-body text-customer">
+                           <p>Chỉ những ai bị nấm móng tay lâu năm mới thực sự hiểu được tình cảnh của tôi. Tôi đi
+                              khám nhiều nơi, dùng đủ loại thảo dược như hướng dẫn trên mạng mà vẫn không khỏi.
+                              Tình cờ phát hiện ra chai xịt <b>Fito Clear</b> này nên tôi đặt mua 1 liệu trình về.
+                              Nó có mùi thơm dễ chịu, xịt lên mát mát, làm dịu da nhiều lắm, tôi kiên trì dùng hết
+                              liệu trình thì bệnh nấm móng lành hẳn, đến nay cũng không có dấu hiệu tái phát. Rất
+                              hài lòng!
+                           </p>
+                           <div class="name-customer">Chị Giang - chia sẻ về Fito Clear</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </div>
+      </section>
+      <section class="question">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="title-question">
+                  <img src="img/symbol.png"> Câu Hỏi Về FITO CLEAR
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-7 col-12">
+                  <ul class="list-ques ">
+                     <li data-ques="box-1" class="wow bounce" data-wow-duration="2s" data-wow-iteration="1">
+                        <span>#</span>
+                        <p>Ai có thể dùng FITO CLEAR?</p>
+                        <div class="icon-list-ques"><i class="fas fa-angle-right"></i></div>
+                     </li>
+                     <div class="text-ques" id="box-1" style="display: none;" data-status="none">
+                        <p>Sản phẩm FITO CLEAR dành cho những đối tượng sau đây:</p>
+                        <ul class="list-ans">
+                           <li>- Móng bị xù xì, phủ một lớp vảy mịn như cám, móng bị tróc.</li>
+                           <li>- Chỗ bị tổn thương có màu vàng, hay nâu đen.</li>
+                           <li>- Móng dễ gãy và dễ bong kèm theo nứt mẻ.</li>
+                        </ul>
+                     </div>
+                     <li data-ques="box-2" class="wow bounce" data-wow-duration="1.5s" data-wow-iteration="1">
+                        <span>#</span>
+                        <p>Cách dùng FITO CLEAR như thế nào?</p>
+                        <div class="icon-list-ques"><i class="fas fa-angle-right"></i></div>
+                     </li>
+                     <div class="text-ques" id="box-2" style="display: none;" data-status="none">
+                        <p>Dùng Fito Clear theo hướng dẫn để sản phẩm phát huy tác dụng:</p>
+                        <ul class="list-ans">
+                           <li>- Rửa sạch tay/chân bằng nước sạch hoặc nước muối, sau đó lau khô.</li>
+                           <li>- Xịt một lớp vừa phải và đợi 3-5 phút cho sản phẩm phát huy tác dụng.</li>
+                           <li>- Sử dụng sản phẩm 2 lần mỗi ngày, vào buổi sáng và tối, trong suốt liệu trình.</li>
+                        </ul>
+                     </div>
+                     <li data-ques="box-3" class="wow bounce" data-wow-duration="2s" data-wow-iteration="1">
+                        <span>#</span>
+                        <p>FITO CLEAR có gây tác dụng phụ khi sử dụng?</p>
+                        <div class="icon-list-ques"><i class="fas fa-angle-right"></i></div>
+                     </li>
+                     <div class="text-ques" id="box-3" data-status="block">
+                        <p style="font-weight: 400;">Trong Fito Clear chỉ chứa các thành phần tự nhiên, nên không
+                           gây kích ứng cũng như không xuất hiện bất kỳ tác dụng phụ nào cho người sử dụng.
+                        </p>
+                     </div>
+                     <li data-ques="box-4" class="wow bounce" data-wow-duration="1.5s" data-wow-iteration="1">
+                        <span>#</span>
+                        <p>Lưu ý gì khi dùng FITO CLEAR?</p>
+                        <div class="icon-list-ques"><i class="fas fa-angle-right"></i></div>
+                     </li>
+                     <div class="text-ques" id="box-4" style="display: none;" data-status="none">
+                        <p>Khi dùng FITO CLEAR?, bạn cần lưu ý những điều sau đây:</p>
+                        <ul class="list-ans">
+                           <li>- Một ngày chỉ cần dùng 2 lần sáng và tối để đảm bảo thuốc phát huy hết công dụng
+                              của nó.
+                           </li>
+                           <li>- Không cần dùng song song sản phẩm khác trong khi đang dùng</li>
+                           <li>- Không cần kiêng bất cứ loại thực phẩm nào khi dùng Fito Clear</li>
+                           <li>- Tùy vào tình trạng bệnh nặng hay nhẹ, bệnh nhân sẽ khỏi bệnh trong vòng 1-2 tháng.
+                           </li>
+                           <li>- Khi sản phẩm dính vào mắt, hãy rửa thật kỹ với nước sạch</li>
+                        </ul>
+                     </div>
+                  </ul>
+               </div>
+               <div class="col-md-5 col-12 d-flex align-items-center">
+                  <figure class="img-chungnhan">
+                     <img src="img/giay-chung-nhan.png" alt="giay-chung-nhan-fito-clear" class="img-fluid"
+                        title="Giấy chứng nhận">
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="price-product">
+         <div class="price-title">
+            <img src="img/symbol.png"> FITO CLEAR GIÁ BAO NHIÊU
+         </div>
+      </section>
+      <section class="form-order">
+         <div class="container-fluid frame-form">
+            <div class="row">
+               <div class="col-md-4 col-12">
+                  <div class="product">
+                     <img src="img/product.png" alt="Fito Clear" title="Fito Clear">
+                  </div>
+               </div>
+               <div class="col-md-6 col-12">
+                  <div class="title-price">GIẢM GIÁ 50%</div>
+                  <div class="box-price">
+                     <div class="left-price">
+                        <del><span>1.580.000 VNĐ</span></del>
+                        <span>Giá chỉ còn</span>
+                     </div>
+                     <div class="right-price">
+                        <span>790.000 VNĐ</span>
+                     </div>
+                  </div>
+                  <form class="formorder" action="" method="post">
+                     <input type="text" id="name" name="name" autocomplete="off" required placeholder="*Tên của bạn">
+                     <input type="text" id="phone" name="phone" autocomplete="off" required
+                        placeholder="*Số điện thoại" maxlength="10" onkeypress="validate(event)">
+                     <center>
+                        <button type="submit" class="js_submit-2" id="formorder">ĐẶT HÀNG</button>
+                     </center>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4 col-12">
+                  <div class="footer-about">
+                     <a href="">
+                     <img src="img/logo-footer.png" alt="Fito Clear" title="Fito Clear">
+                     </a>
+                     <div class="text-about">
+                        Phân phối độc quyền bởi<br>Công ty TNHH Soji Labs
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-12">
+                  <div class="footer-contact">
+                     <div class="title-footer-contact">
+                        Liên hệ
+                     </div>
+                     <div class="detail-footer-contact">
+                        <ul>
+                           <li>
+                              <i class="fas fa-phone-alt"><a href="tel:02873070789">02873070789</a></i>
+                           </li>
+                           <li>
+                              <i class="fas fa-envelope"><a href="mailto:ecom@soji.asia">ecom@soji.asia</a></i>
+                           </li>
+                           <li>
+                              <i class="fab fa-chrome"><a href="#">https://fitoclear.com/</a></i>
+                           </li>
+                           <li>
+                              <i class="fas fa-map-marker-alt"><a href="#" class="disabled">199 Điện Biên Phủ,
+                              P.15, Q.Bình
+                              Thạnh</a></i>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-12">
+                  <div class="connect-me">
+                     <div class="title-footer-connect">Kết nối với chúng tôi</div>
+                     <ul>
+                        <li>
+                           <a href="#" target="_blank" title="Facebook"><img src="svg/icon_facebook.svg"></a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank" title="Twitter"><img src="svg/icon_twitter.svg"></a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank" title="Pinterest"><img src="svg/icon_pinterest.svg"></a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank" title="Youtube"><img src="svg/icon_youtube.svg"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/wow.min.js"></script>
+   </body>
+</html>
